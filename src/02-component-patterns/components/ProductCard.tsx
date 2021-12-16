@@ -1,5 +1,4 @@
 import { createContext } from 'react';
-// import { ProductButtons, ProductImage, ProductTitle } from "../components";
 import { useProduct } from '../hooks/useProduct';
 import { ProductContextProps, ProductCardProps } from '../interfaces/interfaces'; 
 import styles from '../styles/styles.module.css';
@@ -18,17 +17,7 @@ export const ProductCard = ({ children, product }: ProductCardProps) => {
         }}>
             <div className={ styles.productCard }>
                 { children }
-                {/* <ProductImage img={ product.img } />
-                <ProductTitle title={ product.title} />
-                <ProductButtons 
-                    counter={ counter } 
-                    increaseBy={ increaseBy } 
-                /> */}
             </div>
         </Provider>
     )
 }
-
-// ProductCard.Title = ProductTitle;
-// ProductCard.Image = ProductImage;
-// ProductCard.Buttons = ProductButtons;

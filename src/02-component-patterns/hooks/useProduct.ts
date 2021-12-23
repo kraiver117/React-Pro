@@ -33,5 +33,9 @@ export const useProduct = ( { onChange, product, value = 0, initialValues }: use
         isMounted.current = true;
     }, [])
 
-    return { counter, increaseBy };
+    return { 
+        counter, 
+        increaseBy,
+        maxCount: initialValues?.maxCount
+    };
 }

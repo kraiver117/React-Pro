@@ -16,7 +16,7 @@ export const ShoppingPage = () => {
                 className='bg-dark text-white'
                 initialValues={{
                     count: 4,
-                    maxCount: 10
+                    maxCount: 15
                 }}
             >
                 <ProductImage className='custom-image' />

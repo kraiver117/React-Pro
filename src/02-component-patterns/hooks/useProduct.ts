@@ -15,7 +15,11 @@ export const useProduct = ( { onChange, product, value = 0, initialValues }: use
 
     const increaseBy = (value: number) => {
         const newValue = Math.max(counter + value, 0);
-        setCounter(newValue);
+        
+        initialValues?.maxCount 
+            ? setCounter(Math.min(newValue, initialValues.maxCount)) 
+            : setCounter(newValue);
+
 
         onChange && onChange({ count: newValue, product });
     }

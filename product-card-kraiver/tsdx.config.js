@@ -6,7 +6,7 @@ module.exports = {
     
     config.plugins = [
         postcss({ modules: true }),
-        images({ incude: ['**/*.png', '**/*.jpg'] }),
+        images({ include: ['**/*.png', '**/*.jpg'] }),
         ...config.plugins,
     ];
     return config;
